@@ -29,8 +29,6 @@
     </div>
     {% endif %}
 {% endblock %}
-
-{% block footer %}
-    {{ block.super }}
-    <p class="m-0 text-center text-white" style="font-size:small"> You have visited this page {%if num_visits_encrypt == 1 %} once {% else %} {{num_visits_encrypt}} times {%endif%}. </p>
+{% block AddFooter %}
 {% endblock %}
+
