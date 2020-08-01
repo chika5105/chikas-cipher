@@ -15,7 +15,7 @@ from encrypt_decrypt_app.vigenere_cipher import VigenereCipher
 from encrypt_decrypt_app.morse_code import MorseCode
 from encrypt_decrypt_app.nato_code import NatoCode
 import dj_database_url
-import django_heroku
+
 cipher_v = VigenereCipher()
 cipher_m = MorseCode()
 cipher_n = NatoCode()
@@ -159,7 +159,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Heroku: Update database configuration from $DATABASE_URL.
-django_heroku.settings(locals())
+
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 def get_cache():
