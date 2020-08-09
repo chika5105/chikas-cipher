@@ -1,0 +1,2 @@
+# chikas-cipher
+Chika's Cipher is a Django app that allows users to encrypt and decrypt messages, play word decipher games and get ranked on a leadeboard based on their highscores form the game. It was built with a Django backend, an HTML5, CSS3 and Boostrap4 frontend, PostgrSQL for the database and Memcached for caching. The encryption schemes it currently supports are Caesar Cipher, Atbash Cipher, Vigenere Cipher,Reverse Cipher, NATO Code and Morse Code. Checkout the deployed version here: https://chikas-cipher.herokuapp.com/encrypt-decrypt/
